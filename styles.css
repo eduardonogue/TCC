@@ -1,0 +1,134 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+/* Cabeçalho com logotipo e centralização */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #007acc;
+    padding: 1em;
+    color: #fff;
+    width: 100%;
+    max-width: 1000px;
+    border-radius: 8px;
+}
+
+header img.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 1em;
+}
+
+header h1 {
+    font-size: 1.8em;
+    flex: 1;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1em;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-size: 1.1em;
+}
+
+nav a:hover {
+    background-color: #005f99;
+}
+
+/* Seções */
+section {
+    max-width: 800px;
+    width: 100%;
+    margin: 20px 0;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+section:hover {
+    transform: scale(1.01);
+}
+
+h2 {
+    color: #007acc;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+/* Botões */
+.btn {
+    padding: 0.7em 1.5em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    font-size: 1em;
+}
+
+.btn.green {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn.blue {
+    background-color: #007acc;
+    color: white;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+/* Ajustes de fontes */
+p, li {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Agenda e Cardápio */
+.schedule-day, .menu-day {
+    margin-bottom: 1.5em;
+}
+
+.schedule-day h3, .menu-day h3 {
+    color: #333;
+    margin-bottom: 0.5em;
+    font-size: 1.2em;
+}
+
+.schedule-day p, .menu-day p {
+    margin-left: 10px;
+    font-size: 1em;
+    color: #666;
+}

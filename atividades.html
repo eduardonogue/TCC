@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Atividades - Escola do Futuro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="Logo simples circular esmaltaria preto.png" alt="Logotipo da Escola" class="logo">
+        <h1>Painel de Atividades</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="agenda.html">Agenda</a></li>
+                <li><a href="cardapio.html">Cardápio</a></li>
+                <li><a href="perfil.html">Perfil</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Atividades</h2>
+        <div class="activities-list">
+            <h3>Atividades Pendentes</h3>
+            <ul>
+                <li>Estudo de História - Prazo: 18/11</li>
+                <li>Projeto de Ciências - Prazo: 22/11</li>
+            </ul>
+            <button class="btn green" onclick="addActivity()">Adicionar Nova Atividade</button>
+        </div>
+        <div class="completed-activities">
+            <h3>Atividades Concluídas</h3>
+            <ul>
+                <li>Redação sobre Meio Ambiente - Concluída em: 10/11</li>
+            </ul>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
